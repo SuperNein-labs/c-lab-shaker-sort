@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 
 #include "io.h"
-#include "table.h"
+#include "search.h"
 
 
 size_t input_data(
