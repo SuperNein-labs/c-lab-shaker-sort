@@ -5,10 +5,11 @@
 
 
 void shaker_sort(
-    key_array_t keys,
-    data_array_t data,
-    size_t len,
-    compare_func_t comparator
+    void *base,
+    size_t nmemb,
+    size_t size,
+    compare_func_t compar,
+    swap_callback_t on_swap
 );
 
 #endif
