@@ -1,5 +1,6 @@
 #include "search.h"
 
+
 int bin_search(
     key_array_t keys,
     key_t val,
@@ -14,7 +15,7 @@ int bin_search(
     while (left <= right) {
         int mid = left + (right - left) / 2;
 
-        int cmp = comparator(keys[mid], val);
+        int cmp = comparator(&keys[mid], &val);
 
         if (cmp == 0) {
             result = mid;

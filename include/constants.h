@@ -14,6 +14,7 @@ typedef char data_t[MAX_STRING_LEN];
 typedef key_t key_array_t[MAX_DATA_NUM];
 typedef data_t data_array_t[MAX_DATA_NUM];
 
-typedef int (*compare_func_t)(int, int);
+typedef int (*compare_func_t)(const void *, const void *);
+typedef void (*swap_callback_t)(size_t left, size_t right);
 
 #endif

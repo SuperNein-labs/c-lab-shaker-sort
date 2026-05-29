@@ -4,6 +4,9 @@
 #include "constants.h"
 
 
-int compare_keys(key_t a, key_t b);
+int compare_int_keys(
+    const void *a,
+    const void *b
+);
 
 #endif
