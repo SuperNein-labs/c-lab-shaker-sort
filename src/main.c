@@ -8,14 +8,14 @@
 #include "table.h"
 
 
-int input_data(
+size_t input_data(
     key_array_t keys,
     data_array_t data
 ) {
     key_t key;
     data_t string;
 
-    int count = 0;
+    size_t count = 0;
 
     while (
         (scanf("%d %[^\n]", &key, string) == 2)
@@ -74,7 +74,7 @@ int main(void) {
     key_array_t keys;
     data_array_t data;
 
-    int len = input_data(keys, data);
+    size_t len = input_data(keys, data);
 
     printf("Table:");
     print_table(keys, data, len);
