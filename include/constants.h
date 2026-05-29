@@ -5,7 +5,7 @@
 
 #define MAX_STRING_LEN 256
 #define MAX_DATA_NUM 50
-#define TABLE_WIDTH 20
+#define TABLE_WIDTH 25
 
 
 typedef int key_t;
