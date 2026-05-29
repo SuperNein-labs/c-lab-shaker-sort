@@ -6,11 +6,11 @@ int bin_search(
     size_t len,
     compare_func_t comparator
 ) {
-    size_t left = 0;
-    size_t right = len - 1;
+    int left = 0;
+    int right = (int)len - 1;
 
     while (left <= right) {
-        size_t mid = left + (right - left) / 2;
+        int mid = left + (right - left) / 2;
 
         int cmp = comparator(keys[mid], val);
 
